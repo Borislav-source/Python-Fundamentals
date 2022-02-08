@@ -34,4 +34,10 @@ while resources:
 
 print(f'{obtained_material} is obtained!')
 sorted_basket = dict(sorted(main_basket.items(), key= lambda x: (x[1], x[0]), reverse=True))
-print(sorted_basket)
+
+for item, quantity in sorted_basket.items():
+    print(f'{item}: {quantity}')
+
+for item, quantity in sorted(junk_basket.items()):
+    print(f'{item}: {quantity}')
+
